@@ -19,13 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qef-BA-q1V">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteDetailSegue" id="qef-BA-q1V">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qef-BA-q1V" id="u1i-Lt-hcB">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="9Nl-TN-6G0" kind="show" id="Q2F-qt-4Qh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -44,6 +47,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcT-lg-pfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984.05797101449286" y="91.741071428571431"/>
+        </scene>
+        <!--Note Detail View Controller-->
+        <scene sceneID="JJq-Jw-LY5">
+            <objects>
+                <viewController id="9Nl-TN-6G0" customClass="NoteDetailViewController" customModule="SimpleNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sIv-PN-5id">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIu-Ez-Yq2">
+                                <rect key="frame" x="20" y="160" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9js-eK-2Nh">
+                                <rect key="frame" x="20" y="201" width="374" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TIu-Ez-Yq2" firstAttribute="leading" secondItem="AMG-yq-tJB" secondAttribute="leading" constant="20" id="7p7-xF-gQG"/>
+                            <constraint firstItem="AMG-yq-tJB" firstAttribute="bottom" secondItem="9js-eK-2Nh" secondAttribute="bottom" constant="20" id="FCC-hP-pvX"/>
+                            <constraint firstItem="AMG-yq-tJB" firstAttribute="trailing" secondItem="TIu-Ez-Yq2" secondAttribute="trailing" constant="20" id="G82-fF-vcP"/>
+                            <constraint firstItem="9js-eK-2Nh" firstAttribute="leading" secondItem="AMG-yq-tJB" secondAttribute="leading" constant="20" id="JHA-fP-pIN"/>
+                            <constraint firstItem="TIu-Ez-Yq2" firstAttribute="top" secondItem="AMG-yq-tJB" secondAttribute="top" constant="20" id="NuQ-LW-nNy"/>
+                            <constraint firstItem="9js-eK-2Nh" firstAttribute="top" secondItem="TIu-Ez-Yq2" secondAttribute="bottom" constant="20" id="Tx2-xa-bLh"/>
+                            <constraint firstItem="AMG-yq-tJB" firstAttribute="trailing" secondItem="9js-eK-2Nh" secondAttribute="trailing" constant="20" id="wzj-uN-dm4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AMG-yq-tJB"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteLabel" destination="TIu-Ez-Yq2" id="tXk-vo-sFT"/>
+                        <outlet property="titleLabel" destination="TIu-Ez-Yq2" id="gjt-DW-xXy"/>
+                        <outlet property="titleTextView" destination="9js-eK-2Nh" id="GhY-DB-vfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2n-Sn-xtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="103"/>
         </scene>
         <!--New Note-->
         <scene sceneID="vhg-KB-m7R">

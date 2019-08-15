@@ -14,6 +14,7 @@
 		4585E5F22305EFB3003963B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4585E5F02305EFB3003963B8 /* LaunchScreen.storyboard */; };
 		4585E5FA2305F301003963B8 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5F92305F301003963B8 /* NotesTableViewController.swift */; };
 		4585E5FC2305F65C003963B8 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */; };
+		4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4585E5F32305EFB3003963B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4585E5F92305F301003963B8 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4585E5F32305EFB3003963B8 /* Info.plist */,
 				4585E5F92305F301003963B8 /* NotesTableViewController.swift */,
 				4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */,
+				4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */,
 			);
 			path = SimpleNotes;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				4585E5FC2305F65C003963B8 /* AddNoteViewController.swift in Sources */,
 				4585E5EA2305EFB2003963B8 /* ViewController.swift in Sources */,
+				4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */,
 				4585E5E82305EFB2003963B8 /* AppDelegate.swift in Sources */,
 				4585E5FA2305F301003963B8 /* NotesTableViewController.swift in Sources */,
 			);
