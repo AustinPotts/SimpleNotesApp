@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4585E5E82305EFB2003963B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5E72305EFB2003963B8 /* AppDelegate.swift */; };
-		4585E5EA2305EFB2003963B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5E92305EFB2003963B8 /* ViewController.swift */; };
 		4585E5ED2305EFB2003963B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4585E5EB2305EFB2003963B8 /* Main.storyboard */; };
 		4585E5EF2305EFB3003963B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4585E5EE2305EFB3003963B8 /* Assets.xcassets */; };
 		4585E5F22305EFB3003963B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4585E5F02305EFB3003963B8 /* LaunchScreen.storyboard */; };
 		4585E5FA2305F301003963B8 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5F92305F301003963B8 /* NotesTableViewController.swift */; };
 		4585E5FC2305F65C003963B8 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */; };
 		4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */; };
+		4585E6002305FC22003963B8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FF2305FC22003963B8 /* Note.swift */; };
+		4585E602230600B9003963B8 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E601230600B9003963B8 /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4585E5E42305EFB2003963B8 /* SimpleNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4585E5E72305EFB2003963B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4585E5E92305EFB2003963B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4585E5EC2305EFB2003963B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4585E5EE2305EFB3003963B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4585E5F12305EFB3003963B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		4585E5F92305F301003963B8 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		4585E5FF2305FC22003963B8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4585E601230600B9003963B8 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				4585E5E72305EFB2003963B8 /* AppDelegate.swift */,
-				4585E5E92305EFB2003963B8 /* ViewController.swift */,
 				4585E5EB2305EFB2003963B8 /* Main.storyboard */,
 				4585E5EE2305EFB3003963B8 /* Assets.xcassets */,
 				4585E5F02305EFB3003963B8 /* LaunchScreen.storyboard */,
@@ -69,6 +70,8 @@
 				4585E5F92305F301003963B8 /* NotesTableViewController.swift */,
 				4585E5FB2305F65C003963B8 /* AddNoteViewController.swift */,
 				4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */,
+				4585E5FF2305FC22003963B8 /* Note.swift */,
+				4585E601230600B9003963B8 /* NoteController.swift */,
 			);
 			path = SimpleNotes;
 			sourceTree = "<group>";
@@ -145,10 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4585E5FC2305F65C003963B8 /* AddNoteViewController.swift in Sources */,
-				4585E5EA2305EFB2003963B8 /* ViewController.swift in Sources */,
+				4585E602230600B9003963B8 /* NoteController.swift in Sources */,
 				4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */,
 				4585E5E82305EFB2003963B8 /* AppDelegate.swift in Sources */,
 				4585E5FA2305F301003963B8 /* NotesTableViewController.swift in Sources */,
+				4585E6002305FC22003963B8 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
