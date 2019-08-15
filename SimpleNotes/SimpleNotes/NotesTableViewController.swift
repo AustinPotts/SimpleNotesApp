@@ -16,7 +16,13 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.reloadData()
      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -34,9 +40,9 @@ class NotesTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath) as? NoteTableViewCell else{return UITableViewCell()}
         let note = noteController.notes[indexPath.row]
-        cell.textLabel?.text = note.title
+        cell.titleLabel.text = note.title
         return cell
         // Configure the cell...
 
@@ -85,7 +91,7 @@ class NotesTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        
+
         if segue.identifier == "AddNoteSegue" {
             let addNoteVC = segue.destination as? AddNoteViewController
             addNoteVC?.noteController = noteController

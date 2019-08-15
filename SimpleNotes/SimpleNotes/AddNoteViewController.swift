@@ -17,8 +17,9 @@ class AddNoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -26,7 +27,7 @@ class AddNoteViewController: UIViewController {
         guard let newBody = bodyTextField.text, bodyTextField.text != "" else{return}
         
         let newNote = Note(title: newTitle, body: newBody)
-        noteController.notes.append(newNote)
+        noteController?.notes.append(newNote)
         navigationController?.popViewController(animated: true)
     }
     

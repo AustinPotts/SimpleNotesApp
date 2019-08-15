@@ -16,6 +16,7 @@
 		4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */; };
 		4585E6002305FC22003963B8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E5FF2305FC22003963B8 /* Note.swift */; };
 		4585E602230600B9003963B8 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E601230600B9003963B8 /* NoteController.swift */; };
+		4585E60423061384003963B8 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4585E60323061384003963B8 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		4585E5FF2305FC22003963B8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4585E601230600B9003963B8 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		4585E60323061384003963B8 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				4585E5FD2305FAE0003963B8 /* NoteDetailViewController.swift */,
 				4585E5FF2305FC22003963B8 /* Note.swift */,
 				4585E601230600B9003963B8 /* NoteController.swift */,
+				4585E60323061384003963B8 /* NoteTableViewCell.swift */,
 			);
 			path = SimpleNotes;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				4585E5FE2305FAE0003963B8 /* NoteDetailViewController.swift in Sources */,
 				4585E5E82305EFB2003963B8 /* AppDelegate.swift in Sources */,
 				4585E5FA2305F301003963B8 /* NotesTableViewController.swift in Sources */,
+				4585E60423061384003963B8 /* NoteTableViewCell.swift in Sources */,
 				4585E6002305FC22003963B8 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
